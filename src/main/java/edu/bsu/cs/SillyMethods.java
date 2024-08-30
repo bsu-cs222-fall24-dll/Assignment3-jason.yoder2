@@ -1,16 +1,16 @@
 package edu.bsu.cs;
 
 public class SillyMethods {
-    public boolean didGuess42(int i) {
-        return i == 42;
+    public boolean didGuess42(int guess) {
+        return guess == 42;
     }
 
     public String countTo(int count) {
-        StringBuilder builder = new StringBuilder();
+        StringBuilder countBuilder = new StringBuilder();
         for (int i = 0; i < count; i++) {
-            builder.append(i + " ");
+            countBuilder.append(i + " ");
         }
-        builder.append(count);
-        return builder.toString();
+        countBuilder.append(count);
+        return countBuilder.toString();
      }
 }
